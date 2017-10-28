@@ -6,7 +6,7 @@ import router from './router'
 import VueSocketio from 'vue-socket.io'
 
 Vue.config.productionTip = false
-Vue.use(VueSocketio, 'http://localhost:8069')
+Vue.use(VueSocketio, process.env.SOCKET_SERVER)
 
 /* eslint-disable no-new */
 new Vue({
