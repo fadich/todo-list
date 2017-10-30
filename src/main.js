@@ -4,20 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueSocketio from 'vue-socket.io'
+import socket from './models/socket'
 
 Vue.config.productionTip = false
 Vue.use(VueSocketio, process.env.SOCKET_SERVER)
 
 /* eslint-disable no-new */
 new Vue({
-  sockets: {
-    connect () {
-      console.log('socket connected')
-    },
-    customEmit (val) {
-      console.log('this method was fired by the socket server. eg: io.emit("customEmit", data)')
-    }
-  },
+  sockets: socket,
   el: '#app',
   router,
   template: '<App/>',
