@@ -124,7 +124,7 @@ export default {
 
             &-content {
                 display: flex;
-                max-height: 96px;
+                max-height: 42px;
                 /*overflow: auto;*/
                 overflow: hidden;
                 text-align: justify;
