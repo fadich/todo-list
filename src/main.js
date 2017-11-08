@@ -7,9 +7,6 @@ import VueSocketio from 'vue-socket.io'
 import socket from './models/socket'
 import VueCookie from 'vue-cookie'
 import settings from './models/settings'
-import todoList from './models/todo.service'
-
-todoList.getItems()
 
 if (settings.env === 'development') {
   Vue.config.productionTip = false

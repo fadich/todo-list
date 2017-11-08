@@ -22,14 +22,6 @@ let todoList = {
   },
   getItems () {
     return request.get('')
-      .then(res => {
-        console.log(res)
-      })
-      .catch(err => {
-        if (err.message === 'Request failed with status code 403') {
-          window.location.replace(settings.authUrl)
-        }
-      })
   }
 }
 
