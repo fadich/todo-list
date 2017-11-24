@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <list-form></list-form>
         <list-group v-bind:list="list"></list-group>
     </div>
 </template>
@@ -9,11 +10,13 @@
 import settings from '../models/settings'
 import todoList from '../models/todo.service'
 import listGroup from './ListGroup.vue'
+import listForm from './ListForm.vue'
 
 export default {
   name: 'Home',
   components: {
-    listGroup
+    listGroup,
+    listForm
   },
   data () {
     return {

@@ -1,5 +1,5 @@
 <template>
-    <ul class="list-group">
+    <ul class="list-group" v-if="list">
         <list-item v-bind:item="item" v-for="item in list"></list-item>
     </ul>
 </template>
